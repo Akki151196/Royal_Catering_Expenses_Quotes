@@ -26,12 +26,12 @@ export function AdminLayout({ children, title, showHomeButton = false }: AdminLa
   }, []);
 
   return (
-    <div className="flex h-screen bg-gray-50 overflow-hidden">
+    <div className="flex h-screen overflow-hidden bg-[#f7f5f2]">
       <Sidebar isCollapsed={isCollapsed} setIsCollapsed={setIsCollapsed} />
 
       <div className="flex-1 flex flex-col min-w-0 h-full">
         <header
-          className="bg-gradient-to-r from-maroon-800 to-maroon-900 flex-shrink-0 z-30 shadow-md"
+          className="z-30 flex-shrink-0 border-b border-white/10 bg-[#341318] shadow-md"
           style={{ paddingTop: 'env(safe-area-inset-top)' }}
         >
           <div className="flex items-center justify-between px-4 lg:px-6 h-14">
