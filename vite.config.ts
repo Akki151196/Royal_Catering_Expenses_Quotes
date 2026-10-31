@@ -3,6 +3,9 @@ import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
+  // Vite only exposes VITE_* variables by default; these names are already configured
+  // by the connected Supabase project and must be available in the browser bundle.
+  envPrefix: ['VITE_', 'NEXT_PUBLIC_', 'SUPABASE_'],
   plugins: [
     react(),
     VitePWA({
